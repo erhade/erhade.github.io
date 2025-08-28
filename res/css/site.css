@@ -1,0 +1,182 @@
+:root {
+  --link: #0071bc;
+  --link-hover: #208799;
+  --text: #222;
+  --muted: #666;
+}
+
+* {
+  box-sizing: border-box
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial
+}
+
+a:link,
+a:visited {
+  color: var(--link);
+  text-decoration: none
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: none
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px
+}
+
+.header {
+  font-family: Arial;
+  padding: 2rem 1rem
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: -8px;
+  margin-right: -8px
+}
+
+[class^="col-"],
+[class*=" col-"] {
+  padding-left: 8px;
+  padding-right: 8px
+}
+
+.col-md-3,
+.col-md-9 {
+  width: 100%
+}
+
+@media(min-width:768px) {
+  .col-md-3 {
+    width: 25%
+  }
+
+  .col-md-9 {
+    width: 75%
+  }
+}
+
+.align-items-center {
+  align-items: center
+}
+
+.align-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.avatar {
+  display: block;
+  margin: 0 auto 5px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 113, 188, 0.2), rgba(0, 0, 0, 0.1), rgba(0, 113, 188, 0.2));
+  margin: 20px 0
+}
+
+.gap-20 {
+  height: 20px
+}
+
+.gap-10 {
+  height: 10px
+}
+
+.section-div {
+  height: 3em
+}
+
+.content-div {
+  height: 2em
+}
+
+.small-div {
+  height: .5em
+}
+
+code {
+  background: rgba(0, 0, 0, .05);
+  padding: 0 4px;
+  border-radius: 4px
+}
+
+h2 {
+  margin: 0 0 4px
+}
+
+h3 {
+  margin: 16px 0 8px
+}
+
+ul {
+  padding-left: 20px
+}
+
+.no-bullet {
+  list-style: none;
+  margin-left: 0
+}
+
+.paper {
+  margin: 16px 0
+}
+
+.paper b {
+  font-size: 1.05rem
+}
+
+.muted {
+  color: var(--muted)
+}
+
+.zh-name {
+  font-family: "STKaiti", "KaiTi", "KaiTi_GB2312", "Songti SC", "Noto Serif SC", "SimSun", serif;
+  font-weight: 600;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
+  margin-left: .35rem;
+  letter-spacing: .02em;
+  font-size: 0.95em;
+}
+
+.paper-wrap {
+  margin: 16px 0;
+}
+
+.paper-thumb {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+@media (max-width: 767px) {
+  .paper-thumb {
+    margin-bottom: 8px;
+  }
+}
